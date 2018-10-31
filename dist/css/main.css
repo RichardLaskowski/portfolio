@@ -104,7 +104,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-sarif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/pexels-photo-169573.jpeg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -121,10 +121,10 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2 rem 1rem;
+    padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
 
 a {
@@ -190,6 +190,25 @@ main {
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 1.5rem;
+    border: 3px white solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eece1a;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -228,6 +247,7 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
+      font-size: 4rem;
       margin-bottom: 1rem; }
   ul.menu-nav, div.menu-branding {
     float: none;
@@ -250,7 +270,12 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes div {
+    font-size: 1rem;
+    padding: 1rem 2rem; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
